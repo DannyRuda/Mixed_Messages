@@ -18,3 +18,12 @@ const youtubers = [
 
 const actions = ['meets an excited Viewer in public','wins the "Deutscher Computerspielpreis"', 'gets a passenger ride in a race car', 'loses the last round in Valorant'];
 
+function randomNum(arraylength) {
+    return Math.floor(Math.random()*arraylength);
+};
+
+function generateSentence(numYoutuber) {
+    return `${youtubers[numYoutuber].name} ${actions[randomNum(actions.length)]}. ${youtubers[numYoutuber].pronoun} ${youtubers[numYoutuber].reactions[randomNum(youtubers[numYoutuber].reactions.length)]}!`;
+}
+
+console.log(generateSentence(randomNum(youtubers.length)));
