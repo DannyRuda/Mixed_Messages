@@ -1,0 +1,14 @@
+#Frame {
+    display: flex ;
+    justify-content: center;
+    justify-items: center;
+}
+
+h3,h2 {
+    text-align: center;
+}
+
+button {
+    display: block;
+    margin: auto auto;
+}

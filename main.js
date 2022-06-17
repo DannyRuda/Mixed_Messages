@@ -36,3 +36,8 @@ function generateSentence(numYoutuber) {
 
 //calling the method and printing the returned value, the sentence, to the console 
 console.log(generateSentence(randomNum(youtubers.length)));
+
+let button = document.querySelector('button');
+button.onclick = ()=>{
+    document.querySelector('h3').innerText = generateSentence(randomNum(youtubers.length));
+};
